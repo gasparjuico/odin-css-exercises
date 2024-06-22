@@ -12,6 +12,24 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.links,
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Removes default margin/padding on li */
+ul{
+  margin: 0;
+  padding: 0;
 }
 
 .profile-image {
