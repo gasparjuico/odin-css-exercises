@@ -24,3 +24,67 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* SOLUTION */
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* use flex grow on content class */
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 16px;
+  color: rgb(80, 80, 80);
+}
+
+.footer {
+  background: #eeeeee;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* format all of this using flex on content class */
+/* .input,
+.buttons {
+  text-align: center;
+} */
+
+/* use gap on content class instead */
+/* .buttons{
+  padding: 8px;
+} */
+
+button {
+  padding: 8px;
+}
+
+/* could place the styles in ul to save space */
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
